@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  
+  <head>
+    <!-- Normalize Css -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de Pokémon</title>
+    
+    <!-- Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+    
+    <!-- Css Link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  
+  <body>
+    
+    <section class="content">
+      <h1>Pokedex</h1>
+      
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search Pokemon">
+        <button id="searchButton">Search</button>
+      </div>
+
+    <ol id="pokemonList" class="pokemons">
+      <!-- Pokemons Here -->
+    </ol>
+
+    <div class="pagination">
+      <button id="loadMoreButton" type="button">
+        Load More
+      </button>
+    </div>
+
+  </section>
+
+
+  <!-- Script Link -->
+  <script src="./assets/js/pokemon-modal.js"></script>
+  <script src="./assets/js/pokeApi.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
